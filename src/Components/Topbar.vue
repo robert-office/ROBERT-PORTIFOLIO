@@ -1,5 +1,6 @@
 <template>
-  <header class="container mx-auto pt-4 flex gap-6 items-center h-10 px-4">
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-black/30 border-b border-neutral-800/50 py-4 sm:py-0">
+    <div class="container mx-auto pt-4 pb-4 flex gap-6 items-center h-10 px-4">
 
     <section class="flex items-center gap-6 h-6">
       <p class="text-2xl text-neutral-300 font-light cursor-pointer hover:text-neutral-100 font-gravitas">Portifolio</p>
@@ -13,7 +14,7 @@
     </section>
 
     <section class="ml-auto">
-      <button class="p-2 flex items-center gap-2 bg-neutral-300 text-neutral-900 font-medium cursor-pointer hover:bg-neutral-100 font-roboto">
+      <button class="sm:rounded-none rounded-full p-2 flex items-center gap-2 bg-neutral-300 text-neutral-900 font-medium cursor-pointer hover:bg-neutral-100 font-roboto">
         CONTATO
         <span class="relative flex h-5 w-5">
           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
@@ -21,6 +22,7 @@
         </span>
       </button>
     </section>
+    </div>
   </header>
 </template>
 
