@@ -3,11 +3,12 @@
 @theme {
   --font-roboto: 'Roboto Condensed', sans-serif;
   --font-gravitas: 'Gravitas One', sans-serif;
+  --font-oswald: 'Oswald', sans-serif;
 }
 
-/* Roboto Condensed and Gravitas One are loaded from Google Fonts in index.html */
+/* Roboto Condensed, Gravitas One, and Oswald are loaded from Google Fonts in index.html */
 
 html {
     scroll-behavior: smooth;
-    background-color: #000;
+    background-color: #080808;
 }

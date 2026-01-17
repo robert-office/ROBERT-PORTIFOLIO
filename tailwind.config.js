@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         'roboto': ['Roboto Condensed', 'sans-serif'],
         'gravitas': ['Gravitas One', 'sans-serif'],
+        'oswald': ['Oswald', 'sans-serif'],
       },
     },
   },

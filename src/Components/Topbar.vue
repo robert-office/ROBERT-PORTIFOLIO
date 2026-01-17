@@ -1,7 +1,5 @@
 <template>
-
-
-  <header class="container mx-auto pt-4 flex gap-6 items-center h-10">
+  <header class="container mx-auto pt-4 flex gap-6 items-center h-10 px-4">
 
     <section class="flex items-center gap-6 h-6">
       <p class="text-2xl text-neutral-300 font-light cursor-pointer hover:text-neutral-100 font-gravitas">Portifolio</p>
