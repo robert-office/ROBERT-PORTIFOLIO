@@ -12,13 +12,12 @@
       <p class="text-1xl text-neutral-300 font-medium cursor-pointer hover:text-neutral-100 font-roboto">SOBRE</p>
       <p class="text-1xl text-neutral-300 font-medium cursor-pointer hover:text-neutral-100 font-roboto">SERVIÇOS</p>
       <p class="text-1xl text-neutral-300 font-medium cursor-pointer hover:text-neutral-100 font-roboto">PROJETOS</p>
-      <p class="text-1xl text-neutral-300 font-medium cursor-pointer hover:text-neutral-100 font-roboto">CONTATO</p>
-
     </section>
 
+    <section class="ml-auto">
+      <button class="p-2 bg-neutral-300 text-neutral-900 font-medium cursor-pointer hover:bg-neutral-100 font-roboto">CONTATO</button>
+    </section>
   </header>
-
-
 </template>
 
 <script setup lang="ts">
