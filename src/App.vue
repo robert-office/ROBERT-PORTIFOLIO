@@ -17,7 +17,7 @@ import Projetos from "@/Components/Projetos.vue";
       <Sobre/>
     </div>
 
-    <div class="mt-8">
+    <div class="mt-8" id="projetos">
       <Projetos/>
     </div>
   </section>

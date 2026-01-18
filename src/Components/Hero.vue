@@ -30,14 +30,14 @@ import maos from "@/assets/images/maos.webp"
         <font-awesome-icon :icon="['fab', 'whatsapp']" class="mt-0.5 relative text-green-500" />
       </span>
     </button>
-    <button class="sm:mr-auto p-2 text-neutral-300 bg-[#18181b] font-medium cursor-pointer font-roboto flex items-center gap-2">
+    <a href="#projetos" class="sm:mr-auto p-2 text-neutral-300 bg-[#18181b] font-medium cursor-pointer font-roboto flex items-center gap-2">
       Ver projetos
 
       <span class="relative flex h-5 w-5">
         <font-awesome-icon :icon="['far', 'arrow-alt-circle-down']" class="mt-0.5 relative text-purple-500" />
       </span>
 
-    </button>
+    </a>
   </section>
 
   <section class="sm:mt-4 mt-10">

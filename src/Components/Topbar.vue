@@ -8,8 +8,8 @@
     </section>
 
     <section class="items-center gap-8 h-6 sm:flex hidden">
-      <p class="text-1xl text-neutral-300 font-medium cursor-pointer hover:text-neutral-100 font-roboto">SOBRE MIM</p>
-      <p class="text-1xl text-neutral-300 font-medium cursor-pointer hover:text-neutral-100 font-roboto">PROJETOS</p>
+      <a href="#sobremim" class="text-1xl text-neutral-300 font-medium cursor-pointer hover:text-neutral-100 font-roboto">SOBRE MIM</a>
+      <a href="#projetos" class="text-1xl text-neutral-300 font-medium cursor-pointer hover:text-neutral-100 font-roboto">PROJETOS</a>
     </section>
 
     <section class="ml-auto">

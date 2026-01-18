@@ -74,7 +74,7 @@ const experiences = [
 
 <template>
 
-  <section class="container mx-auto flex justify-center px-4 sm:py-20 py-10">
+  <section class="container mx-auto flex justify-center px-4 sm:py-20 py-10" id="sobremim">
     <div>
       <div class="mb-4">
         <p class="text-sm font-roboto text-green-500 tracking-widest uppercase mb-2">// SOBRE MIM</p>
