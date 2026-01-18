@@ -29,7 +29,7 @@ const technologies = [
   { name: 'TailwindCSS', icon: 'css3-alt' },
   { name: 'JavaScript', icon: 'js' },
   { name: 'PHP', icon: 'php' },
-  { name: 'MySQL', icon: 'database' }
+  { name: 'MySQL', icon: 'mdb' }
 ]
 
 </script>
