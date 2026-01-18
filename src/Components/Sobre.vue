@@ -42,9 +42,9 @@ const technologies = [
         <p class="text-sm font-roboto text-green-500 tracking-widest uppercase mb-2">// SOBRE MIM</p>
         <h2 class="text-5xl md:text-6xl font-oswald font-bold text-neutral-200 mb-4">
           Desenvolvedor Fullstack <br>
-          <span class="bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">Focado em construir soluções digitais</span>
+          <span class="text-4xl md:text-5xl bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">Focado em construir soluções digitais</span>
         </h2>
-        <p class="text-neutral-400 text-lg font-roboto max-w-3xl">
+        <p class="text-neutral-400 text-1xl font-roboto max-w-3xl">
           Desenvolvedor especializado em criar experiências web modernas, utilizando Vue.js, Laravel e TailwindCSS.
         </p>
       </div>

@@ -17,7 +17,7 @@ import maos from "@/assets/images/maos.webp"
   </section>
 
   <section class="container mx-auto px-4 mt-4">
-    <h1 class="sm:text-6xl text-4xl text-neutral-300 font-medium font-oswald sm:text-center text-left">
+    <h1 class="sm:text-6xl text-5xl text-neutral-300 font-medium font-oswald sm:text-center text-left">
       Transforme sua <span class="bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent font-bold">ideia em realidade</span> <br>com a ajuda de um <span class="bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent font-bold">profissional experiente.</span>
     </h1>
   </section>

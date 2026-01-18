@@ -8,7 +8,7 @@ import Sobre from "@/Components/Sobre.vue";
   <section>
     <Topbar/>
 
-    <div class="sm:mt-20 mt-14">
+    <div class="sm:mt-20 mt-6">
       <Hero/>
     </div>
 
