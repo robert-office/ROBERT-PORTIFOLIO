@@ -1,5 +1,5 @@
 <template>
-  <header class="sticky top-0 z-50 backdrop-blur-md bg-black/30 border-b border-neutral-800/50 py-4 sm:py-0">
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-black/30 border-b border-neutral-800/50 py-4 sm:py-2">
     <div class="container mx-auto pt-4 pb-4 flex gap-6 items-center h-10 px-4">
 
     <section class="flex items-center gap-6 h-6">

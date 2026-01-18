@@ -32,6 +32,44 @@ const technologies = [
   { name: 'MySQL', icon: 'mdb' }
 ]
 
+const graduations = [
+  {
+    title: 'Curso Básico de Informática',
+    period: 'dez. 2016 - dez. 2018',
+    institution: 'UP EXPRESS',
+    image: '',
+    description: 'Concluí este curso básico há alguns anos, marcando o início de uma longa trajetória na área de tecnologia. Foi nesse curso que adquiri conhecimentos fundamentais e fui introduzido ao uso de ferramentas essenciais como Word, Excel, Photoshop, entre outras.',
+    techs: ['Word', 'Excel', 'Photoshop']
+  },
+  {
+    title: 'Curso Técnico - Análise e Desenvolvimento de Sistemas',
+    period: 'jun 2019 - dez. 2021',
+    institution: 'ETEC',
+    image: '',
+    description: 'Curso de Análise e Desenvolvimento de Sistemas, com foco na introdução aos fundamentos da lógica de programação. Este curso me proporcionou a oportunidade de ingressar no mercado de trabalho, resultando na obtenção do meu primeiro estágio na área de tecnologia como Desenvolvedor Web Full-Stack em PHP.',
+    techs: ['HTML', 'CSS', 'JavaScript', 'PHP', 'SQL', 'UML', 'Scrum']
+  }
+]
+
+const experiences = [
+  {
+    title: 'Desenvolvedor Junior PHP Fullstack',
+    period: 'dez. 2019 - dez. 2020',
+    company: 'JL Seguros',
+    image: '',
+    description: 'Desenvolvimento PHP Full-Stack com sólida experiência em jQuery, Bootstrap e consumo de APIs e webservices externos. Minhas responsabilidades na empresa incluíam a criação de novas funcionalidades, manutenção e refatoração do código do sistema ERP interno. Com minha contribuição, a empresa alcançou maior facilidade, agilidade e produtividade, graças às novas ferramentas que implementei no sistema de forma contínua.',
+    techs: ['PHP', 'MySQL', 'Bootstrap', 'jQuery']
+  },
+  {
+    title: 'Desenvolvedor Junior 2',
+    period: 'agost. 2022 - Atual',
+    company: 'NITI - Polícia Científica',
+    image: '',
+    description: 'Desenvolvedor PHP Full-Stack Nível 2, com sólida experiência em Laravel, jQuery, Bootstrap e consumo de APIs e webservices externos. Minha principal função na empresa envolve a criação de novos sistemas que atendem tanto aos cidadãos do Estado de São Paulo, como o sistema de gerenciamento de perícias veiculares, quanto a sistemas internos voltados para os funcionários do gabinete da Superintendência, como o sistema de controle de armamentos e munições. Além disso, realizo manutenções nos sistemas existentes, que atualmente utilizam CakePHP, mas estou à frente do projeto de migração dessas plataformas para Laravel e tecnologias mais modernas.',
+    techs: ['Laravel', 'SQL Server', 'CakePHP', 'Bootstrap', 'jQuery']
+  }
+]
+
 </script>
 
 <template>
@@ -94,6 +132,99 @@ const technologies = [
             <span class="text-neutral-300 font-roboto font-medium">{{ tech.name }}</span>
           </div>
         </div>
+      </div>
+
+      <div class="mt-16 max-w-6xl">
+        <h3 class="text-2xl font-oswald font-semibold text-neutral-200 mb-8">
+          <span class="text-purple-500"> GRADUAÇÕES </span> & <span class="text-green-500">EXPERIÊNCIAS</span>
+        </h3>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          
+          <div 
+            v-for="graduation in graduations" 
+            :key="graduation.title"
+            class="group relative bg-[#18181b] border border-neutral-800 p-6 hover:border-purple-500/50 transition-all duration-300"
+          >
+            <div class="absolute top-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-purple-600 group-hover:w-full transition-all duration-500"></div>
+            
+            <h4 class="text-neutral-200 font-oswald text-lg font-bold mb-2">
+              {{ graduation.title }}
+            </h4>
+            
+            <div class="flex items-center gap-3 mb-3 text-sm text-neutral-400 font-roboto">
+              <span class="flex items-center gap-1">
+                <font-awesome-icon :icon="['fas', 'calendar']" class="text-purple-500" />
+                {{ graduation.period }}
+              </span>
+              <span class="flex items-center gap-1">
+                <font-awesome-icon :icon="['fas', 'graduation-cap']" class="text-purple-500" />
+                {{ graduation.institution }}
+              </span>
+            </div>
+
+            <div class="w-full h-40 bg-neutral-900 rounded-lg mb-4 flex items-center justify-center border border-neutral-800">
+              <font-awesome-icon :icon="['fas', 'image']" class="text-4xl text-neutral-700" />
+            </div>
+
+            <p class="text-neutral-400 font-roboto text-sm leading-relaxed mb-4">
+              {{ graduation.description }}
+            </p>
+
+            <div class="flex flex-wrap gap-2">
+              <span 
+                v-for="tech in graduation.techs" 
+                :key="tech"
+                class="px-3 py-1 bg-purple-500/10 border border-purple-500/30 text-purple-400 text-xs font-roboto font-medium rounded-full"
+              >
+                {{ tech }}
+              </span>
+            </div>
+          </div>
+
+          <div 
+            v-for="experience in experiences" 
+            :key="experience.title"
+            class="group relative bg-[#18181b] border border-neutral-800 p-6 hover:border-green-500/50 transition-all duration-300"
+          >
+            <div class="absolute top-0 left-0 w-0 h-0.5 bg-gradient-to-r from-green-400 to-green-600 group-hover:w-full transition-all duration-500"></div>
+            
+            <h4 class="text-neutral-200 font-oswald text-lg font-bold mb-2">
+              {{ experience.title }}
+            </h4>
+            
+            <div class="flex items-center gap-3 mb-3 text-sm text-neutral-400 font-roboto">
+              <span class="flex items-center gap-1">
+                <font-awesome-icon :icon="['fas', 'calendar']" class="text-green-500" />
+                {{ experience.period }}
+              </span>
+              <span class="flex items-center gap-1">
+                <font-awesome-icon :icon="['fas', 'building']" class="text-green-500" />
+                {{ experience.company }}
+              </span>
+            </div>
+
+            <div class="w-full h-40 bg-neutral-900 rounded-lg mb-4 flex items-center justify-center border border-neutral-800">
+              <font-awesome-icon :icon="['fas', 'image']" class="text-4xl text-neutral-700" />
+            </div>
+
+            <p class="text-neutral-400 font-roboto text-sm leading-relaxed mb-4">
+              {{ experience.description }}
+            </p>
+
+            <div class="flex flex-wrap gap-2">
+              <span 
+                v-for="tech in experience.techs" 
+                :key="tech"
+                class="px-3 py-1 bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-roboto font-medium rounded-full"
+              >
+                {{ tech }}
+              </span>
+            </div>
+          </div>
+
+        </div>
+        
       </div>
     </div>
 
