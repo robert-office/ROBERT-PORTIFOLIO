@@ -5,6 +5,7 @@ import Hero from "@/components/Hero.vue";
 import Sobre from "@/components/Sobre.vue";
 import Projetos from "@/components/Projetos.vue";
 import CTA from "@/components/CTA.vue";
+import Parceiros from "@/components/Parceiros.vue";
 import Footer from "@/components/Footer.vue";
 
 const showScrollTop = ref(false)
@@ -43,12 +44,16 @@ onUnmounted(() => {
         <CTA/>
       </div>
 
+      <div class="mt-8">
+        <Parceiros/>
+      </div>
+
       <a 
         v-show="showScrollTop"
         href="#topo" 
-        class="absolute sticky bottom-4 ml-auto mr-4 w-16 h-16 bg-neutral-800 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 hover:bg-neutral-700 hover:scale-110"
+        class="fixed bottom-8 right-8 z-50 w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-purple-500/50 group"
       >
-        <font-awesome-icon :icon="['far', 'circle-up']" class="text-white text-3xl" />
+        <font-awesome-icon :icon="['fas', 'arrow-up']" class="text-white text-xl group-hover:translate-y-[-2px] transition-transform duration-300" />
       </a>
     </section>
 
