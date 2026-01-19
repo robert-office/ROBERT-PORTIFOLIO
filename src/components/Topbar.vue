@@ -3,7 +3,7 @@
     <div class="container mx-auto pt-4 pb-4 flex gap-6 items-center h-10 px-4">
 
     <section class="flex items-center gap-6 h-6">
-      <p class="text-2xl text-neutral-300 font-light cursor-pointer hover:text-neutral-100 font-gravitas">Portfólio</p>
+      <p class="text-2xl text-neutral-300 font-light cursor-pointer hover:text-neutral-100 font-gravitas">Robert U.</p>
       <span class="sm:block hidden bg-gray-400 font-bold h-full w-0.5"></span>
     </section>
 
@@ -13,7 +13,7 @@
     </section>
 
     <section class="ml-auto">
-      <button class="sm:rounded-none rounded-full p-2 flex items-center gap-2 bg-neutral-300 text-neutral-900 font-medium cursor-pointer hover:bg-neutral-100 font-roboto">
+      <button class="sm:rounded-none transition-all duration-300 ease-out hover:scale-105 hover:rotate-2 hover:shadow-md hover:shadow-green-500/30 rounded-full p-2 flex items-center gap-2 bg-neutral-300 text-neutral-900 font-medium cursor-pointer hover:bg-neutral-100 font-roboto">
         CONTATO
         <span class="relative flex h-5 w-5">
           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>

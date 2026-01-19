@@ -55,7 +55,7 @@ const goToSlide = (index) => {
 
 <template>
 
-  <section class="container mx-auto flex justify-center px-4 py-10">
+  <section class="container mx-auto flex justify-center px-4 pb-10">
     <div class="max-w-6xl w-full">
       <div class="mb-12">
         <p class="text-sm font-roboto text-purple-500 tracking-widest uppercase mb-2">// PROJETOS</p>
@@ -121,14 +121,14 @@ const goToSlide = (index) => {
 
         <button 
           @click="prevSlide"
-          class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-purple-500 hover:bg-purple-600 text-white p-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-purple-500/50 z-10"
+          class="absolute cursor-pointer left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-purple-500 hover:bg-purple-600 text-white p-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-purple-500/50 z-10"
         >
           <font-awesome-icon :icon="['fas', 'chevron-left']" class="text-xl" />
         </button>
 
         <button 
           @click="nextSlide"
-          class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-purple-500 hover:bg-purple-600 text-white p-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-purple-500/50 z-10"
+          class="absolute cursor-pointer right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-purple-500 hover:bg-purple-600 text-white p-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-purple-500/50 z-10"
         >
           <font-awesome-icon :icon="['fas', 'chevron-right']" class="text-xl" />
         </button>

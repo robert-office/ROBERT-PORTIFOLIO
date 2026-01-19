@@ -1,8 +1,8 @@
 <script setup>
-import Topbar from "@/Components/Topbar.vue";
-import Hero from "@/Components/Hero.vue";
-import Sobre from "@/Components/Sobre.vue";
-import Projetos from "@/Components/Projetos.vue";
+import Topbar from "@/components/Topbar.vue";
+import Hero from "@/components/Hero.vue";
+import Sobre from "@/components/Sobre.vue";
+import Projetos from "@/components/Projetos.vue";
 </script>
 
 <template>

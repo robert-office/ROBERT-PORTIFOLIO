@@ -23,14 +23,14 @@ import maos from "@/assets/images/maos.webp"
   </section>
 
   <section class="flex px-4 mt-4">
-    <button class="sm:ml-auto p-2 bg-neutral-300 text-[#18181b] font-medium cursor-pointer font-roboto flex items-center gap-2">
+    <button class="transition-all duration-300 ease-out hover:scale-105 hover:rotate-2 sm:ml-auto p-2 bg-neutral-300 text-[#18181b] font-medium cursor-pointer font-roboto flex items-center gap-2">
       Conversar agora  
       <span class="relative flex h-5 w-5">
         <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
         <font-awesome-icon :icon="['fab', 'whatsapp']" class="mt-0.5 relative text-green-500" />
       </span>
     </button>
-    <a href="#projetos" class="sm:mr-auto p-2 text-neutral-300 bg-[#18181b] font-medium cursor-pointer font-roboto flex items-center gap-2">
+    <a href="#projetos" class="transition-all duration-300 ease-out hover:scale-105 hover:rotate-[-2deg] hover:shadow-md hover:shadow-purple-500/30 sm:mr-auto p-2 text-neutral-300 bg-[#18181b] font-medium cursor-pointer font-roboto flex items-center gap-2">
       Ver projetos
 
       <span class="relative flex h-5 w-5">
