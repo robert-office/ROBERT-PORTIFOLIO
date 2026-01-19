@@ -9,12 +9,12 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faArrowAltCircleDown } from '@fortawesome/free-regular-svg-icons'
+import { faArrowAltCircleDown, faCircleUp } from '@fortawesome/free-regular-svg-icons'
 import { faWhatsapp, faVuejs, faLaravel, faCss3Alt, faJs, faPhp, faMdb, faBootstrap, faDocker } from '@fortawesome/free-brands-svg-icons'
 import { faCode, faPalette, faDatabase, faRocket, faCalendar, faGraduationCap, faBuilding, faImage, faFolder, faChevronLeft, faChevronRight, faCube, faNetworkWired, faServer, faChartLine } from '@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
-library.add(faArrowAltCircleDown, faWhatsapp, faVuejs, faLaravel, faCss3Alt, faJs, faPhp, faMdb, faBootstrap, faDocker, faCode, faPalette, faDatabase, faRocket, faCalendar, faGraduationCap, faBuilding, faImage, faFolder, faChevronLeft, faChevronRight, faCube, faNetworkWired, faServer, faChartLine)
+library.add(faArrowAltCircleDown, faCircleUp, faWhatsapp, faVuejs, faLaravel, faCss3Alt, faJs, faPhp, faMdb, faBootstrap, faDocker, faCode, faPalette, faDatabase, faRocket, faCalendar, faGraduationCap, faBuilding, faImage, faFolder, faChevronLeft, faChevronRight, faCube, faNetworkWired, faServer, faChartLine)
 
 const app = createApp(App)
 

@@ -1,6 +1,6 @@
 <script setup>
 
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 
 const projects = [
   {
@@ -38,18 +38,45 @@ const projects = [
 ]
 
 const currentIndex = ref(0)
+let carrouselTimer = null
+
+const startTimer = () => {
+  carrouselTimer = setInterval(() => {
+    currentIndex.value = (currentIndex.value + 1) % projects.length
+  }, 5000)
+}
+
+const stopTimer = () => {
+  if (carrouselTimer) {
+    clearInterval(carrouselTimer)
+    carrouselTimer = null
+  }
+}
 
 const nextSlide = () => {
   currentIndex.value = (currentIndex.value + 1) % projects.length
+  stopTimer()
 }
 
 const prevSlide = () => {
   currentIndex.value = (currentIndex.value - 1 + projects.length) % projects.length
+  stopTimer()
 }
 
 const goToSlide = (index) => {
   currentIndex.value = index
+  stopTimer()
 }
+
+onMounted(() => {
+  startTimer()
+})
+
+onUnmounted(() => {
+  if (carrouselTimer) {
+    clearInterval(carrouselTimer)
+  }
+})
 
 </script>
 
@@ -142,8 +169,8 @@ const goToSlide = (index) => {
           @click="goToSlide(index)"
           class="transition-all duration-300"
           :class="index === currentIndex 
-            ? 'w-12 h-3 bg-purple-500 rounded-full' 
-            : 'w-3 h-3 bg-neutral-600 rounded-full hover:bg-neutral-500'"
+            ? 'cursor-pointer w-12 h-3 bg-purple-500 rounded-full'
+            : 'cursor-pointer w-3 h-3 bg-neutral-600 rounded-full hover:bg-neutral-500'"
         ></button>
       </div>
 

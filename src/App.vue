@@ -6,7 +6,7 @@ import Projetos from "@/components/Projetos.vue";
 </script>
 
 <template>
-  <section>
+  <section  id="topo">
     <Topbar/>
 
     <div class="sm:mt-20 mt-6">
@@ -20,6 +20,10 @@ import Projetos from "@/components/Projetos.vue";
     <div class="mt-8" id="projetos">
       <Projetos/>
     </div>
+
+    <a href="#topo" class="absolute sticky bottom-4 ml-auto mr-4 w-16 h-16 bg-neutral-800 rounded-full flex items-center justify-center cursor-pointer">
+      <font-awesome-icon :icon="['far', 'circle-up']" class="text-white text-3xl" />
+    </a>
   </section>
 </template>
 
