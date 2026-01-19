@@ -2,38 +2,46 @@
 
 import { ref, onMounted, onUnmounted } from 'vue'
 
+import site_policia from "@/assets/images/projects/site_policiacientifica.png"
+import site_arte_nobre from "@/assets/images/projects/site_artenobreservice.png"
+import site_bartho from "@/assets/images/projects/site_bartho.png"
+
 const projects = [
   {
-    title: 'Sistema de Gestão de Seguros',
-    period: '2020',
-    category: 'Sistema Web',
-    image: '',
-    description: 'Plataforma completa para gestão de apólices, cotações e sinistros de seguros, com integração a múltiplas seguradoras.',
-    techs: ['Vue.js', 'Laravel', 'MySQL', 'Bootstrap']
+    title: 'Portal da Polícia Científica',
+    period: '2025',
+    category: 'Site Institucional',
+    image: site_policia,
+    description: 'Portal institucional oficial da Polícia Científica de São Paulo, desenvolvido pelo NITI (Núcleo de Inteligência e Tecnologia da Informação). Plataforma moderna que centraliza informações, serviços e comunicação institucional para cidadãos e servidores.',
+    techs: ['Laravel', 'Blade', 'MySQL', 'Bootstrap', 'JQuery'],
+    link: 'https://www.policiacientifica.sp.gov.br'
   },
   {
-    title: 'Portal de Perícias Veiculares',
-    period: '2023',
-    category: 'Sistema Governamental',
+    title: 'LOCMEE',
+    period: '2026',
+    category: 'Sistema WEB',
     image: '',
-    description: 'Sistema público para agendamento e acompanhamento de perícias veiculares do Estado de São Paulo.',
-    techs: ['Laravel', 'SQL Server', 'jQuery', 'Bootstrap']
+    description: 'Plataforma SaaS completa para agentes de turismo, incluindo portal web responsivo e dashboard administrativo. Sistema de gestão de reservas, integração com gateway de pagamento Stripe e infraestrutura containerizada para alta disponibilidade.',
+    techs: ['Laravel', 'VueJs', 'TailwindCSS', 'Stripe', 'SQL Server', 'Docker', 'Dokploy'],
+    link: 'https://locmee.tur.br'
   },
   {
-    title: 'Sistema de Controle de Armamentos',
-    period: '2023',
-    category: 'Sistema Interno',
-    image: '',
-    description: 'Plataforma interna para controle e rastreamento de armamentos e munições da Polícia Científica.',
-    techs: ['Laravel', 'SQL Server', 'Vue.js', 'TailwindCSS']
+    title: 'BARTHO',
+    period: '2025',
+    category: 'Sistema WEB',
+    image: site_bartho,
+    description: 'Sistema web organizacional para ONGs e abrigos de animais. Gerenciamento completo do processo de adoção, incluindo cadastro de animais, controle de interessados, agendamento de visitas e acompanhamento pós-adoção.',
+    techs: ['Laravel', 'Vue.js', 'TailwindCSS', 'SQL Server'],
+    link: 'https://bartho.org.br'
   },
   {
-    title: 'E-commerce Moderno',
-    period: '2022',
+    title: 'Arte Nobre Service',
+    period: '2025',
     category: 'Loja Virtual',
-    image: '',
-    description: 'Loja virtual completa com carrinho de compras, pagamento integrado e painel administrativo.',
-    techs: ['Vue.js', 'Laravel', 'Stripe', 'MySQL']
+    image: site_arte_nobre,
+    description: 'E-commerce especializado em produtos artesanais de marcenaria. Plataforma com catálogo de produtos customizáveis, painel administrativo completo e infraestrutura containerizada para escalabilidade.',
+    techs: ['Laravel', 'Vue.js', 'TailwindCSS', 'MySQL', 'Docker'],
+    link: 'https://artenobreservice.com.br'
   }
 ]
 
@@ -123,15 +131,16 @@ onUnmounted(() => {
                   {{ project.category }}
                 </p>
 
-                <div class="w-full h-64 bg-neutral-900 rounded-lg mb-6 flex items-center justify-center border border-neutral-800">
-                  <font-awesome-icon :icon="['fas', 'image']" class="text-5xl text-neutral-700" />
+                <div class="w-full sm:h-140 h-64 bg-neutral-900 rounded-lg mb-6 flex items-center justify-center border border-neutral-800 overflow-hidden">
+                  <img v-if="project.image" :alt="'imagem ' + project.title" :src="project.image" class="w-full h-full sm:object-fit object-cover" />
+                  <font-awesome-icon v-else :icon="['fas', 'image']" class="text-5xl text-neutral-700" />
                 </div>
 
                 <p class="text-neutral-400 font-roboto leading-relaxed mb-6">
                   {{ project.description }}
                 </p>
 
-                <div class="flex flex-wrap gap-2">
+                <div class="flex flex-wrap gap-2 mb-6">
                   <span 
                     v-for="tech in project.techs" 
                     :key="tech"
@@ -140,6 +149,16 @@ onUnmounted(() => {
                     {{ tech }}
                   </span>
                 </div>
+
+                <a 
+                  :href="project.link" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-purple-500 hover:bg-purple-600 text-white font-roboto font-medium rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30"
+                >
+                  Ver projeto
+                  <font-awesome-icon :icon="['fas', 'arrow-up-right-from-square']" class="text-sm" />
+                </a>
               </div>
             </div>
 
