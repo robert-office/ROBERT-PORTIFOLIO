@@ -166,23 +166,29 @@ const experiences = [
           >
             <div class="absolute top-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-purple-600 group-hover:w-full transition-all duration-500"></div>
             
-            <h4 class="text-neutral-200 font-oswald text-lg font-bold mb-2">
-              {{ graduation.title }}
-            </h4>
+            <div class="absolute left-0 top-6 w-1 h-16 bg-gradient-to-b from-purple-500 to-purple-600"></div>
             
-            <div class="flex items-center gap-3 mb-3 text-sm text-neutral-400 font-roboto">
-              <span class="flex items-center gap-1">
-                <font-awesome-icon :icon="['fas', 'calendar']" class="text-purple-500" />
-                {{ graduation.period }}
-              </span>
-              <span class="flex items-center gap-1">
-                <font-awesome-icon :icon="['fas', 'graduation-cap']" class="text-purple-500" />
-                {{ graduation.institution }}
-              </span>
-            </div>
-
-            <div class="w-full h-40 bg-neutral-900 rounded-lg mb-4 flex items-center justify-center border border-neutral-800">
-              <font-awesome-icon :icon="['fas', 'image']" class="text-4xl text-neutral-700" />
+            <div class="flex items-start gap-4 mb-4">
+              <div class="flex-shrink-0 bg-purple-500/20 border-2 border-purple-500 rounded-full p-3">
+                <font-awesome-icon :icon="['fas', 'graduation-cap']" class="text-2xl text-purple-400" />
+              </div>
+              
+              <div class="flex-1">
+                <h4 class="text-neutral-200 font-oswald text-lg font-bold mb-2">
+                  {{ graduation.title }}
+                </h4>
+                
+                <div class="flex items-center gap-3 mb-3 text-sm text-neutral-400 font-roboto">
+                  <span class="flex items-center gap-1">
+                    <font-awesome-icon :icon="['fas', 'calendar']" class="text-purple-500" />
+                    {{ graduation.period }}
+                  </span>
+                  <span class="flex items-center gap-1">
+                    <font-awesome-icon :icon="['fas', 'graduation-cap']" class="text-purple-500" />
+                    {{ graduation.institution }}
+                  </span>
+                </div>
+              </div>
             </div>
 
             <p class="text-neutral-400 font-roboto text-sm leading-relaxed mb-4">
@@ -207,23 +213,29 @@ const experiences = [
           >
             <div class="absolute top-0 left-0 w-0 h-0.5 bg-gradient-to-r from-green-400 to-green-600 group-hover:w-full transition-all duration-500"></div>
             
-            <h4 class="text-neutral-200 font-oswald text-lg font-bold mb-2">
-              {{ experience.title }}
-            </h4>
+            <div class="absolute left-0 top-6 w-1 h-16 bg-gradient-to-b from-green-500 to-green-600"></div>
             
-            <div class="flex items-center gap-3 mb-3 text-sm text-neutral-400 font-roboto">
-              <span class="flex items-center gap-1">
-                <font-awesome-icon :icon="['fas', 'calendar']" class="text-green-500" />
-                {{ experience.period }}
-              </span>
-              <span class="flex items-center gap-1">
-                <font-awesome-icon :icon="['fas', 'building']" class="text-green-500" />
-                {{ experience.company }}
-              </span>
-            </div>
-
-            <div class="w-full h-40 bg-neutral-900 rounded-lg mb-4 flex items-center justify-center border border-neutral-800">
-              <font-awesome-icon :icon="['fas', 'image']" class="text-4xl text-neutral-700" />
+            <div class="flex items-start gap-4 mb-4">
+              <div class="flex-shrink-0 bg-green-500/20 border-2 border-green-500 rounded-full p-3">
+                <font-awesome-icon :icon="['fas', 'building']" class="text-2xl text-green-400" />
+              </div>
+              
+              <div class="flex-1">
+                <h4 class="text-neutral-200 font-oswald text-lg font-bold mb-2">
+                  {{ experience.title }}
+                </h4>
+                
+                <div class="flex items-center gap-3 mb-3 text-sm text-neutral-400 font-roboto">
+                  <span class="flex items-center gap-1">
+                    <font-awesome-icon :icon="['fas', 'calendar']" class="text-green-500" />
+                    {{ experience.period }}
+                  </span>
+                  <span class="flex items-center gap-1">
+                    <font-awesome-icon :icon="['fas', 'building']" class="text-green-500" />
+                    {{ experience.company }}
+                  </span>
+                </div>
+              </div>
             </div>
 
             <p class="text-neutral-400 font-roboto text-sm leading-relaxed mb-4">
