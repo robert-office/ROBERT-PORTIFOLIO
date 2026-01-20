@@ -4,7 +4,7 @@
 
 <template>
   <section class="container mx-auto flex justify-center px-4 pt-20 pb-10">
-    <div class="max-w-4xl w-full">
+    <div class="max-w-6xl w-full">
       <div class="relative bg-gradient-to-br from-purple-900/20 to-purple-600/10 border border-purple-500/30 rounded-2xl p-12 overflow-hidden">
         
         <div class="absolute top-0 right-0 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl"></div>
