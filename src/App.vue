@@ -40,11 +40,11 @@ onUnmounted(() => {
         <Projetos/>
       </div>
 
-      <div class="mt-8">
+      <div class="sm:mt-8">
         <CTA/>
       </div>
 
-      <div class="mt-8">
+      <div class="sm:mt-8">
         <Parceiros/>
       </div>
 

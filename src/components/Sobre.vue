@@ -135,11 +135,11 @@ const experiences = [
           TECNOLOGIAS & <span class="text-green-500">FERRAMENTAS</span>
         </h3>
 
-        <div class="flex flex-wrap gap-4">
+        <div class="grid grid-cols-2 sm:flex sm:flex-wrap gap-4">
           <div
               v-for="tech in technologies"
               :key="tech.name"
-              class="group flex items-center gap-3 bg-[#18181b] border border-neutral-800 px-6 py-4 hover:shadow-lg transition-all duration-300"
+              class="group flex items-center justify-center gap-3 bg-[#18181b] border border-neutral-800 px-6 py-4 hover:shadow-lg transition-all duration-300"
               :class="`hover:border-[${tech.color}]/50 hover:shadow-[${tech.color}]/10`"
           >
             <font-awesome-icon
