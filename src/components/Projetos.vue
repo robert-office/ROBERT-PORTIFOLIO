@@ -3,6 +3,7 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 import site_policia from "@/assets/images/projects/site_policiacientifica.png"
+import site_locmee from "@/assets/images/projects/site_locmee.png"
 import site_arte_nobre from "@/assets/images/projects/site_artenobreservice.png"
 import site_bartho from "@/assets/images/projects/site_bartho.png"
 
@@ -20,7 +21,7 @@ const projects = [
     title: 'LOCMEE',
     period: '2026',
     category: 'Sistema WEB',
-    image: '',
+    image: site_locmee,
     description: 'Plataforma SaaS completa para agentes de turismo, incluindo portal web responsivo e dashboard administrativo. Sistema de gestão de reservas, integração com gateway de pagamento Stripe e infraestrutura containerizada para alta disponibilidade.',
     techs: ['Laravel', 'VueJs', 'TailwindCSS', 'Stripe', 'SQL Server', 'Docker', 'Dokploy'],
     link: 'https://locmee.tur.br'
